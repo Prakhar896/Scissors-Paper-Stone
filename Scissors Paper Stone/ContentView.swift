@@ -61,11 +61,12 @@ struct ContentView: View {
                 Spacer()
             }
             ZStack {
-                Divider()
                 if gameResult == .draw {
                     Text("DRAW!")
                         .font(.largeTitle.weight(.black))
                         .foregroundColor(.red)
+                } else {
+                    Divider()
                 }
             }
             VStack {
